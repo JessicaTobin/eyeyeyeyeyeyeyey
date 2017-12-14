@@ -1,0 +1,268 @@
+from time import sleep 
+
+print ("Welcome To The (Unfair) Game!")
+sleep(3)
+print(" __    __    ___  _        __   ___   ___ ___    ___      ______   ___       ______  __ __    ___       ____   ____  ___ ___    ___  __ ")
+print("|  |__|  |  /  _]| |      /  ] /   \ |   |   |  /  _]    |      | /   \     |      ||  |  |  /  _]     /    | /    ||   |   |  /  _]|  |")
+print("|  |  |  | /  [_ | |     /  / |     || _   _ | /  [_     |      ||     |    |      ||  |  | /  [_     |   __||  o  || _   _ | /  [_ |  |")
+print("|  |  |  ||    _]| |___ /  /  |  O  ||  \_/  ||    _]    |_|  |_||  O  |    |_|  |_||  _  ||    _]    |  |  ||     ||  \_/  ||    _]|__|")
+print("|  `  '  ||   [_ |     /   \_ |     ||   |   ||   [_       |  |  |     |      |  |  |  |  ||   [_     |  |_ ||  _  ||   |   ||   [_  __ ")
+print(" \      / |     ||     \     ||     ||   |   ||     |      |  |  |     |      |  |  |  |  ||     |    |     ||  |  ||   |   ||     ||  |")
+print("  \_/\_/  |_____||_____|\____| \___/ |___|___||_____|      |__|   \___/       |__|  |__|__||_____|    |___,_||__|__||___|___||_____||__|")
+
+
+print("						            _o8888888o_ ")
+print("						         .o888\'      \'888o.")
+print("						      .o88\'      (      \'88o.")
+print("						     ,88\'      .) )       \'88,")
+print("						    ,88\'      `(,' (,      \'88,")
+print("						   ,88\'       ). (, ('      \'88,")
+print("						   88\'       ( ) ; ' )       \'88")
+print("						   88        ')_,_)_(`        88")
+print("						   88         [_____]         88")
+print("						   88          \_ _/          88")
+print("						   88           |_|_          88")
+print("						   88,     __.-'(__ )        ,88")
+print("						   \'88,     '-. \___ )      ,88\'")
+print("						    \'88,     _.\_)__ )     ,88\'")
+print("						     \'88o,  _   (__ )    ,o88\'")
+print("						       '88o, `'-\_/'   ,o88'")
+print("						        '888o,_   _,o888'")
+print("						            '8JGS88888'")
+ 
+while True:
+
+    health=["10hp"] #creates a list that will show your hp
+    yep=input ("press w to start!")  #creates sort of a menu screen
+    inventory=[]
+    achievement=[]
+    
+    if yep=="w":      #start the game from here
+        print ("the game begins......")
+        print ("you begin your story as a lost hero in a dungeon")
+        print ("before you lies a huge door and a massive chest")
+      
+    tree=input("will you choose the door or chest?")
+    
+    if tree=="chest":
+        print ("you have chosen the chest")
+        sleep(3)
+        print ("you undo the latch and push the lid up with all your might.")
+        sleep(2)
+        print ("within the chest is a giant serpant who had previously been sleeping but has now awoken.")
+        sleep(3)
+        print ("unfortunatly this means it will eat you now")
+        sleep(3)
+        print ("your story ends here")
+        sleep (3)
+        print ("Game Over")
+        sleep(3)
+        break
+
+        print("loading")
+        print(".")
+        sleep (1)
+        print(".")
+        sleep(1)
+        print(".")
+
+
+    elif tree=="door":
+        print("you have chosen the door")
+        sleep(3)
+        print("you push the door with all your might")
+        sleep(3)
+        print("a bright shine in your eyes blinds you for a few seconds")
+		
+	        
+    meh=input ("Go left to a beautiful forest or a dank scary forest?")
+
+		  
+    if meh=="dank scary forest":
+        print("You step into the dank scary forest, you realise that this was probably a poor decision.")
+        sleep(3.5)
+        print("You want to turn back now, but it was your decision after all.")
+        sleep(3)
+        print("Surprisingly, you made it through the Dank Forest, but when you turned behind, you swear you saw a pair of eyes starring at you, oh well.")
+        sleep(5.5)
+        print("When you leave you're greated to a large area of grass reaching up to your knees, stepping into the field, you take a look around and spot")
+        print("A town near by, you also see a windmill and see someone working outside it. Which way do you go?")
+		      
+        field=input ("Windmill, or town?")
+
+	     
+    if field=="town":
+            print("You step towards the town, you could smell the distinct scent of smoke in the air, you realise the town has been raided by a bunch of scavengers!")
+            sleep(4)
+            print("You notice a slightly rusted, copper dagger on the ground, it must have been dropped by the scavengers, you pick it up and keep it holstered")
+            sleep(3.5)
+            print("You got a Copper Dagger!")
+            sleep(1)
+            print("You're about to go look around for more D A N K items but you notice a scavenger walking towards you, you keep a tight grip on the old dagger.")
+            sleep(4)
+            print("THE SCAVENGER LEAPS TOWARDS YOU WITH GUSTO, HE DOES A FLIP AND LANDS ON HIS FEET LIKE A CAT")
+            sleep(2)
+            print("You've been challenged by A Scavenger!")
+
+    fight=input ("You have 10hp, what do you do? (swing) dagger, (kick) with your feet, (throw) a rock you found laying on the ground")
+
+    if fight=="swing":
+        print("You take a swing with your dagger, it goes right into the Sacavenger's ribs, but the scavenger takes it back out and swings with a much harder blow, It's a critical hit! -10hp")
+        sleep(5)
+        print("You slowly start to black out")
+        print("Game over.")
+        break
+
+    elif fight=="kick":
+        print("You kick upwards but the scavenger is too quick for you, he grabs your leg and says \"Yo, that ain't cool man, stay in school.\"")
+        sleep(4)
+        print("With one quick blow, he dislocates your knee, leaving you splayed out on the ground.")
+        sleep(3)
+        print("You slowly start to black out")
+        print("Game over.")
+        break
+
+    elif fight=="throw":
+        print("You pick up the rock in a flash, throwing it in a random direction.")
+        sleep(2)
+        print("You somehow manage to throw the rock straight into the scavenger's mouth, making him choke on The Rock.")
+        sleep(3)
+        print("\"Can you smell what The Rock is cookin?\" You say to the scavenger before walking away. YA DID IT")
+	sleep(3)
+	print("You continue through the town, feeling something warm in your pocket, you take out the dagger, holding it in your hand, it slowly starts getting warmer until it starts burning your hand, you throw it on the ground, watching the copper dagger glow a bright red before turning into a puff of smoke, the dagger no more.")
+	town2=
+
+    else:
+        print("you stand still in shock")
+        sleep(1)
+        print("the scavanger comes overand swiftly kills you")
+        sleep(1)
+        print("your story ends here...")
+        break
+            
+    if field=="windmill":
+	print("You walk towards the windmill through the tall blades of grass but on your way you feel something grab on to your leg, you look down through the grass and see a seal, you're a bit confused as it doesn't hurt you as it holds on to your leg with it's teeth, you decide to bring him along")
+        sleep(6)
+        print("A (slightly rabid) seal has joined your party!")
+        sleep(1) 
+	print("You make your way to the door of the windmill with your newly obtained companion")
+	sleep(1)
+	print ("You open the door into the large circular room")
+	sleep(1)
+	print("An old man sits before you on a three legged stool")
+	sleep(1)
+	print("You flick on the lights to see better")
+	sleep(1)
+	print("You discover the old man isn't actually alive")
+	sleep(1)
+	print("You stand in shock as you almost throw up")
+	sleep(1)
+	print("Your seal companion goes over to the skeleton and picks up a bow a quiver filled with 12 arrows")
+	sleep(1.7)
+	print("You got the bow and arrow!")
+	sleep(1)
+	inventory.append("bow and arrow")
+	print ("You got your first inventory item")
+	sleep(1)
+	print (inventory)
+	sleep (1)
+	print ("You got an achievement!")
+	achievement.append("Katniss Everdeen")
+	print (achievement)
+	sleep (1)
+	print ("You pluck up your courage and walk up the steps of the windmill")
+	sleep (1)
+	print ("The stairs creak beneath you as you make your way upstairs")
+	sleep (1)
+	print ("You walk up into another large circular room")
+	sleep (1)
+	print ("Before you lies a huge slightly transparent....thing")
+	sleep (1)
+	
+	print ("It challenges you to a fight")
+	sleep (1)
+	print ("You have 10hp")
+	sleep (1)
+	print ("What will you do?")
+	sleep (1)
+	scrap=input ("Use bow? Use fists? Use feet? Use head?")
+	
+	if scrap=="Use head":
+		print ("You think for a moment")
+		sleep (1)
+		print ("You decide to run away")
+		sleep (1)
+		print ("You turn on your heels and start sprinting down the stairs")
+		sleep (1.5)
+		print ("You push open the door and run")
+		sleep (1)
+		print ("Sadly you slip on a random banana peel")
+		sleep (1)
+		print ("The transparent....thing phases through the walls of the windmill")
+		sleep (1.7)
+		print ("You accept your faith and let the thing kill you")
+		sleep (1,3)
+		print ("Your story ends here")
+		sleep (1)
+		print ("Game Over")
+		break
+		
+	elif scrap=="Use feet":
+		print ("You look down to you feet")
+		sleep (1)
+		print ("You run towards the....thing")
+		sleep (1)
+		print ("It swipes at you but you dodge quickly")
+		sleep (1)
+		print ("You jump up and attempt to kick the....thing")
+		sleep (1)
+		print ("Sadly, it somehow grabs your leg")
+		sleep (1)
+		print ("You know this is the end for you")
+		sleep (1)
+		print ("It swings you on the ground and you start to black black out")
+		sleep (1)
+		print ("Your story ends here")
+		sleep (1)
+		print ("Game Over")
+		break
+		
+	elif scrap=="Use bow":
+		print ("You take out your newly obtained weapon")
+		sleep (1)
+		print ("You take an arrow out of the quiver and place it in the bow")
+		sleep (1)
+		print ("It is around this point you realise you have never used a bow and arrow before in your life")
+		sleep (1.7)
+		print ("You attempt to shoot an arrow but you fail and shoot yourself in the foot")
+		sleep (1.3)
+		print ("You drop your bow in shock")
+		sleep (1)
+		print ("You curl up into a small ball on the floor and await the sweet release of death from your embarassment")
+		sleep (2.3)
+		print ("You will never be Katniss Everdeen")
+		sleep (1)
+		print ("Your story ends here")
+		sleep (1)
+		print ("Game Over")
+		break
+		
+	elif scrap=="Use fists":
+		print ("You realise you don't know how to use a bow and arrow")
+		sleep (1.4)
+		print ("You raise your fists and run towards the....thing")
+		sleep (1)
+		print ("You punch as much as you can without looking")
+		sleep (1)
+		print ("When you open your eyes you see the...thing has fallen")
+		sleep (1)
+		print ("You stand in triumph at ypur victory")
+		#to be continued
+		
+	else: #the indent seems really far ahead im not sure if its right or not
+		print ("You shout swears as the...thing picks you up and throws you on the ground")
+		sleep (1)
+		print ("Your story ends here")
+		sleep (1)
+		print ("Game Over")
+		break
